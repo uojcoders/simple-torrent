@@ -13,13 +13,13 @@ var VERSION = "0.0.0-src" //set with ldflags
 
 func main() {
 	s := server.Server{
-		Title: "SimpleTorrent",
+		Title: "NanoGen v2 - Torrent",
 		Port:  3000,
 	}
 
 	o := opts.New(&s)
 	o.Version(VERSION)
-	o.Repo("https://github.com/boypt/simple-torrent")
+	o.Repo("/")
 	o.PkgRepo()
 	o.SetLineWidth(96)
 	o.Parse()
